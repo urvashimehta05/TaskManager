@@ -25,20 +25,22 @@ hover:-translate-y-[1px]
 active:scale-[0.97]
 active:shadow-[inset_0_2px_8px_rgba(23,58,64,0.25)]
 
+dark:bg-slate-800/60 dark:border-slate-700/50 dark:text-white dark:hover:bg-slate-700/80 dark:shadow-[0_0_0_1px_rgba(255,255,255,0.1),0_8px_30px_rgba(0,0,0,0.3)]
+
 before:absolute before:inset-0 before:rounded-md
 before:bg-gradient-to-b before:from-[var(--inset-glint)] before:to-transparent
 before:opacity-70 before:pointer-events-none `,
-edit: `bg-[var(--sea-ink)] text-white hover:bg-[rgba(23,58,64,0.8)] active:scale-[0.97] active:scale-[0.97] active:shadow-[inset_0_2px_6px_rgba(23,58,64,0.25)]`,
-        default: "bg-[var(--sea-ink)] xt-white hover:bg-[rgba(23,58,64,0.8)]",
+        edit: `bg-[var(--sea-ink)] text-white hover:bg-[rgba(23,58,64,0.8)] active:scale-[0.97] active:shadow-[inset_0_2px_6px_rgba(23,58,64,0.25)] dark:bg-sea-ink/80 dark:hover:bg-sea-ink dark:text-white`,
+        default: "bg-[var(--sea-ink)] text-white hover:bg-[rgba(23,58,64,0.8)] dark:bg-sea-ink/80 dark:hover:bg-sea-ink dark:text-white",
         outline:
-          "border-border hover:bg-input/50 hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:bg-input/30",
+          "border-border hover:bg-input/50 hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-slate-700 dark:bg-transparent dark:text-foreground dark:hover:bg-slate-800/60 dark:aria-expanded:bg-slate-800",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground dark:bg-slate-700/60 dark:text-white dark:hover:bg-slate-700",
         ghost:
-          "hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50",
+          "hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-slate-800/60 dark:text-white dark:hover:text-white",
         destructive:
-          "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
-        link: "text-primary underline-offset-4 hover:underline",
+          "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-red-500/20 dark:text-red-400 dark:hover:bg-red-500/30 dark:focus-visible:ring-red-500/40",
+        link: "text-primary underline-offset-4 hover:underline dark:text-palm dark:hover:text-palm/80",
       },
       size: {
         default:

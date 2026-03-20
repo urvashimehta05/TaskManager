@@ -42,7 +42,7 @@ export const DeleteTask = ({ id }: { id: string }) => {
           <Button
             variant="outline"
             onClick={() => setOpen(false)}
-            className="text-white font-bold"
+            className="text-white font-bold dark:bg-slate-700/50 dark:hover:bg-slate-700"
           >
             Cancel
           </Button>
@@ -50,7 +50,7 @@ export const DeleteTask = ({ id }: { id: string }) => {
           <Button
             variant="destructive"
             onClick={handleDelete}
-            className="text-white font-bold"
+            className="text-white font-bold dark:bg-red-600/70 dark:hover:bg-red-600"
           >
             Delete
           </Button>
